@@ -186,6 +186,9 @@ namespace Slot_Machine
                 }
             } else
             {
+                //disable nudge
+                btnNudge.Enabled = false;
+
                 //determine the final prize
                 earnings = findWinnings(Convert.ToInt32(nudBet.Value));
 
